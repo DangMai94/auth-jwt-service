@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://127.0.0.1:5432/jwt_demo
+    url: jdbc:postgresql://127.0.0.1:5432/jwt
     username: postgres
     password: 5432
   jpa:
@@ -8,9 +8,11 @@ spring:
     hibernate:
       ddl-auto: update
 
-
 ## App Properties
 bezkoder:
   app:
     jwtSecret: bezKoderSecretKey
     jwtExpirationMs: 86400000
+
+server:
+  port: 8099
